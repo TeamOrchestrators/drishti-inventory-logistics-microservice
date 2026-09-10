@@ -1,0 +1,88 @@
+{
+  "inventory": [
+    {
+      "inventory_id": "INV-001",
+      "station_id": "ST-MAITRI",
+      "item_id": "ITEM-001",
+      "item_name": "Diesel",
+      "category": "Fuel",
+      "unit": "litres",
+      "current_quantity": 2500.0,
+      "minimum_quantity": 3000,
+      "maximum_capacity": 15000,
+      "criticality": "Critical",
+      "status": "Critical",
+      "last_updated": "2026-09-09T12:18:30.325677"
+    },
+    {
+      "inventory_id": "INV-002",
+      "station_id": "ST-MAITRI",
+      "item_id": "ITEM-002",
+      "item_name": "Drinking Water",
+      "category": "Water",
+      "unit": "litres",
+      "current_quantity": 12000,
+      "minimum_quantity": 5000,
+      "maximum_capacity": 20000,
+      "criticality": "Critical",
+      "status": "Normal",
+      "last_updated": "2026-09-08T10:30:00"
+    },
+    {
+      "inventory_id": "INV-003",
+      "station_id": "ST-BHARATI",
+      "item_id": "ITEM-003",
+      "item_name": "Food Supplies",
+      "category": "Food",
+      "unit": "kg",
+      "current_quantity": 750,
+      "minimum_quantity": 300,
+      "maximum_capacity": 1000,
+      "criticality": "High",
+      "status": "Normal",
+      "last_updated": "2026-09-08T10:30:00"
+    }
+  ],
+  "history": [
+    {
+      "inventory_id": "INV-001",
+      "action": "ADD",
+      "quantity": 100,
+      "previous_quantity": 4100,
+      "new_quantity": 4200,
+      "timestamp": "2026-09-09T11:46:03.269199"
+    },
+    {
+      "inventory_id": "INV-001",
+      "action": "ADD",
+      "quantity": 100,
+      "previous_quantity": 4200,
+      "new_quantity": 4300,
+      "timestamp": "2026-09-09T11:47:02.986572"
+    },
+    {
+      "inventory_id": "INV-001",
+      "action": "ADJUSTMENT",
+      "quantity": 3700.0,
+      "previous_quantity": 4300,
+      "new_quantity": 8000.0,
+      "timestamp": "2026-09-09T12:16:17.685667"
+    },
+    {
+      "inventory_id": "INV-001",
+      "action": "ADJUSTMENT",
+      "quantity": -5500.0,
+      "previous_quantity": 8000.0,
+      "new_quantity": 2500.0,
+      "timestamp": "2026-09-09T12:18:28.875927"
+    },
+    {
+      "inventory_id": "INV-001",
+      "action": "ADJUSTMENT",
+      "quantity": 0.0,
+      "previous_quantity": 2500.0,
+      "new_quantity": 2500.0,
+      "timestamp": "2026-09-09T12:18:30.325689"
+    }
+  ]
+}
