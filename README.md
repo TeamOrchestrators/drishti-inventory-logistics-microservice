@@ -49,9 +49,12 @@ This service manages station-wise inventory, stock movements, consumption analys
 ```text
 SIH26/
 │
-├── inventory.py
-├── inventory_manager.py
-├── inventory.json
-├── main.py
-├── .gitignore
+├── Inventory/
+│   ├── inventory.py
+│   ├── inventory_manager.py
+│   ├── inventory.json
+│   ├── main.py
+│   ├── .gitignore
+│   └── README.md
+│
 └── README.md
