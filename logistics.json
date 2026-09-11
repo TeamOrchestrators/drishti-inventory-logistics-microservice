@@ -1,0 +1,154 @@
+{
+    "stations": [
+    {
+      "id": "10000000-0000-0000-0000-000000000001",
+      "code": "STN-AMU",
+      "name": "Amundsen Station",
+      "station_type": "station",
+      "latitude": -90.0,
+      "longitude": 0.0,
+      "personnel_capacity": 48,
+      "notes": "Primary polar operations station."
+    },
+    {
+      "id": "10000000-0000-0000-0000-000000000002",
+      "code": "DEP-S4",
+      "name": "Sector 4 Depot",
+      "station_type": "depot",
+      "latitude": -82.5,
+      "longitude": 135.2,
+      "personnel_capacity": 16,
+      "notes": "Remote depot supporting field teams."
+    },
+    {
+      "id": "10000000-0000-0000-0000-000000000003",
+      "code": "HUB-CHR",
+      "name": "Christchurch Logistics Hub",
+      "station_type": "hub",
+      "latitude": -43.5321,
+      "longitude": 172.6362,
+      "personnel_capacity": 120
+    }
+  ],
+  "items": [
+    {
+      "id": "30000000-0000-0000-0000-000000000001",
+      "item_code": "FUEL-DRUM",
+      "name": "Aircraft Fuel Drum",
+      "category": "fuel",
+      "unit": "drum",
+      "unit_weight_kg": 190.0,
+      "unit_volume_m3": 0.25,
+      "is_critical": true
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000002",
+      "item_code": "RATION-PACK",
+      "name": "Food Ration Pack",
+      "category": "food",
+      "unit": "pack",
+      "unit_weight_kg": 1.5,
+      "unit_volume_m3": 0.004,
+      "is_critical": true
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000003",
+      "item_code": "OXY-TANK",
+      "name": "Medical Oxygen Tank",
+      "category": "medicine",
+      "unit": "tank",
+      "unit_weight_kg": 18.0,
+      "unit_volume_m3": 0.08,
+      "is_critical": true
+    },
+    {
+      "id": "30000000-0000-0000-0000-000000000004",
+      "item_code": "RADIO-KIT",
+      "name": "Emergency Radio Kit",
+      "category": "equipment",
+      "unit": "kit",
+      "unit_weight_kg": 2.5,
+      "unit_volume_m3": 0.015,
+      "is_critical": true
+    }
+  ],
+  "cargo": [
+    {
+      "id": "80000000-0000-0000-0000-000000000001",
+      "cargo_code": "CG-26062-001",
+      "qr_value": "80000000-0000-0000-0000-000000000001",
+      "origin_station_id": "10000000-0000-0000-0000-000000000003",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "expedition_id": "60000000-0000-0000-0000-000000000001",
+      "priority": "critical",
+      "status": "in_transit",
+      "notes": "QR payload is the cargo UUID."
+    },
+    {
+      "id": "80000000-0000-0000-0000-000000000002",
+      "cargo_code": "CG-26062-002",
+      "qr_value": "80000000-0000-0000-0000-000000000002",
+      "origin_station_id": "10000000-0000-0000-0000-000000000001",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "priority": "high",
+      "status": "received"
+    }
+  ],
+  "cargo_items": [
+    {
+      "id": "81000000-0000-0000-0000-000000000001",
+      "cargo_id": "80000000-0000-0000-0000-000000000001",
+      "item_id": "30000000-0000-0000-0000-000000000003",
+      "quantity": 12,
+      "declared_weight_kg": 216
+    },
+    {
+      "id": "81000000-0000-0000-0000-000000000002",
+      "cargo_id": "80000000-0000-0000-0000-000000000002",
+      "item_id": "30000000-0000-0000-0000-000000000004",
+      "quantity": 4,
+      "declared_weight_kg": 10
+    }
+  ],
+  "cargo_qr_scans": [
+    {
+      "id": "82000000-0000-0000-0000-000000000001",
+      "cargo_id": "80000000-0000-0000-0000-000000000001",
+      "event_type": "created",
+      "station_id": "10000000-0000-0000-0000-000000000003",
+      "scanned_by_personnel_id": "20000000-0000-0000-0000-000000000004",
+      "notes": "Cargo registered and QR generated."
+    },
+    {
+      "id": "82000000-0000-0000-0000-000000000002",
+      "cargo_id": "80000000-0000-0000-0000-000000000002",
+      "event_type": "received",
+      "station_id": "10000000-0000-0000-0000-000000000002",
+      "scanned_by_personnel_id": "20000000-0000-0000-0000-000000000002",
+      "notes": "Cargo received and checked at depot."
+    }
+  ],
+  "expeditions": [
+    {
+      "id": "60000000-0000-0000-0000-000000000001",
+      "expedition_code": "EXP-26062-01",
+      "name": "Aurora Traverse",
+      "purpose": "Ice-shelf survey and equipment deployment.",
+      "origin_station_id": "10000000-0000-0000-0000-000000000001",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "lead_personnel_id": "20000000-0000-0000-0000-000000000001",
+      "planned_start_at": "2026-09-05T06:00:00Z",
+      "planned_end_at": "2026-09-14T18:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000002",
+      "expedition_code": "EXP-26062-02",
+      "name": "Depot Resupply Survey",
+      "origin_station_id": "10000000-0000-0000-0000-000000000003",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "lead_personnel_id": "20000000-0000-0000-0000-000000000004",
+      "status": "planned"
+    }
+  ]
+}
