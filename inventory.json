@@ -1,88 +1,229 @@
 {
-  "inventory": [
+  "stations": [
     {
-      "inventory_id": "INV-001",
-      "station_id": "ST-MAITRI",
-      "item_id": "ITEM-001",
-      "item_name": "Diesel",
-      "category": "Fuel",
-      "unit": "litres",
-      "current_quantity": 2500.0,
-      "minimum_quantity": 3000,
-      "maximum_capacity": 15000,
-      "criticality": "Critical",
-      "status": "Critical",
-      "last_updated": "2026-09-09T12:18:30.325677"
+      "id": "10000000-0000-0000-0000-000000000001",
+      "code": "STN-AMU",
+      "name": "Amundsen Station",
+      "station_type": "station",
+      "latitude": -90.0,
+      "longitude": 0.0,
+      "personnel_capacity": 48,
+      "notes": "Primary polar operations station."
     },
     {
-      "inventory_id": "INV-002",
-      "station_id": "ST-MAITRI",
-      "item_id": "ITEM-002",
-      "item_name": "Drinking Water",
-      "category": "Water",
-      "unit": "litres",
-      "current_quantity": 12000,
-      "minimum_quantity": 5000,
-      "maximum_capacity": 20000,
-      "criticality": "Critical",
-      "status": "Normal",
-      "last_updated": "2026-09-08T10:30:00"
+      "id": "10000000-0000-0000-0000-000000000002",
+      "code": "DEP-S4",
+      "name": "Sector 4 Depot",
+      "station_type": "depot",
+      "latitude": -82.5,
+      "longitude": 135.2,
+      "personnel_capacity": 16,
+      "notes": "Remote depot supporting field teams."
     },
     {
-      "inventory_id": "INV-003",
-      "station_id": "ST-BHARATI",
-      "item_id": "ITEM-003",
-      "item_name": "Food Supplies",
-      "category": "Food",
-      "unit": "kg",
-      "current_quantity": 750,
-      "minimum_quantity": 300,
-      "maximum_capacity": 1000,
-      "criticality": "High",
-      "status": "Normal",
-      "last_updated": "2026-09-08T10:30:00"
+      "id": "10000000-0000-0000-0000-000000000003",
+      "code": "HUB-CHR",
+      "name": "Christchurch Logistics Hub",
+      "station_type": "hub",
+      "latitude": -43.5321,
+      "longitude": 172.6362,
+      "personnel_capacity": 120
     }
   ],
-  "history": [
+  "items": [
     {
-      "inventory_id": "INV-001",
-      "action": "ADD",
-      "quantity": 100,
-      "previous_quantity": 4100,
-      "new_quantity": 4200,
-      "timestamp": "2026-09-09T11:46:03.269199"
+      "id": "30000000-0000-0000-0000-000000000001",
+      "item_code": "FUEL-DRUM",
+      "name": "Aircraft Fuel Drum",
+      "category": "fuel",
+      "unit": "drum",
+      "unit_weight_kg": 190.0,
+      "unit_volume_m3": 0.25,
+      "is_critical": true
     },
     {
-      "inventory_id": "INV-001",
-      "action": "ADD",
-      "quantity": 100,
-      "previous_quantity": 4200,
-      "new_quantity": 4300,
-      "timestamp": "2026-09-09T11:47:02.986572"
+      "id": "30000000-0000-0000-0000-000000000002",
+      "item_code": "RATION-PACK",
+      "name": "Food Ration Pack",
+      "category": "food",
+      "unit": "pack",
+      "unit_weight_kg": 1.5,
+      "unit_volume_m3": 0.004,
+      "is_critical": true
     },
     {
-      "inventory_id": "INV-001",
-      "action": "ADJUSTMENT",
-      "quantity": 3700.0,
-      "previous_quantity": 4300,
-      "new_quantity": 8000.0,
-      "timestamp": "2026-09-09T12:16:17.685667"
+      "id": "30000000-0000-0000-0000-000000000003",
+      "item_code": "OXY-TANK",
+      "name": "Medical Oxygen Tank",
+      "category": "medicine",
+      "unit": "tank",
+      "unit_weight_kg": 18.0,
+      "unit_volume_m3": 0.08,
+      "is_critical": true
     },
     {
-      "inventory_id": "INV-001",
-      "action": "ADJUSTMENT",
-      "quantity": -5500.0,
-      "previous_quantity": 8000.0,
-      "new_quantity": 2500.0,
-      "timestamp": "2026-09-09T12:18:28.875927"
+      "id": "30000000-0000-0000-0000-000000000004",
+      "item_code": "RADIO-KIT",
+      "name": "Emergency Radio Kit",
+      "category": "equipment",
+      "unit": "kit",
+      "unit_weight_kg": 2.5,
+      "unit_volume_m3": 0.015,
+      "is_critical": true
+    }
+  ],
+  "station_inventory": [
+    {
+      "id": "40000000-0000-0000-0000-000000000001",
+      "station_id": "10000000-0000-0000-0000-000000000001",
+      "item_id": "30000000-0000-0000-0000-000000000001",
+      "on_hand_quantity": 100,
+      "reserved_quantity": 30,
+      "available_quantity": 70,
+      "minimum_quantity": 40,
+      "maximum_quantity": 200
     },
     {
-      "inventory_id": "INV-001",
-      "action": "ADJUSTMENT",
-      "quantity": 0.0,
-      "previous_quantity": 2500.0,
-      "new_quantity": 2500.0,
-      "timestamp": "2026-09-09T12:18:30.325689"
+      "id": "40000000-0000-0000-0000-000000000002",
+      "station_id": "10000000-0000-0000-0000-000000000001",
+      "item_id": "30000000-0000-0000-0000-000000000002",
+      "on_hand_quantity": 600,
+      "reserved_quantity": 80,
+      "available_quantity": 520,
+      "minimum_quantity": 200,
+      "maximum_quantity": 1000
+    },
+    {
+      "id": "40000000-0000-0000-0000-000000000003",
+      "station_id": "10000000-0000-0000-0000-000000000002",
+      "item_id": "30000000-0000-0000-0000-000000000003",
+      "on_hand_quantity": 18,
+      "reserved_quantity": 4,
+      "available_quantity": 14,
+      "minimum_quantity": 20,
+      "maximum_quantity": 100
+    },
+    {
+      "id": "40000000-0000-0000-0000-000000000004",
+      "station_id": "10000000-0000-0000-0000-000000000001",
+      "item_id": "30000000-0000-0000-0000-000000000004",
+      "on_hand_quantity": 14.0,
+      "reserved_quantity": 2,
+      "available_quantity": 12.0,
+      "minimum_quantity": 4,
+      "maximum_quantity": 30
+    }
+  ],
+  "inventory_id_aliases": {
+    "8c4a94d2-c2a5-42c9-9d48-8423dd1a9b1b": "40000000-0000-0000-0000-000000000003"
+  },
+  "inventory_transactions": [
+    {
+      "id": "50000000-0000-0000-0000-000000000001",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000001",
+      "transaction_type": "receipt",
+      "on_hand_delta": 100,
+      "reserved_delta": 0,
+      "reference_type": "initial_stock",
+      "notes": "Initial fuel stock loaded for demo."
+    },
+    {
+      "id": "50000000-0000-0000-0000-000000000002",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000001",
+      "transaction_type": "reservation",
+      "on_hand_delta": 0,
+      "reserved_delta": 30,
+      "reference_type": "expedition",
+      "reference_id": "60000000-0000-0000-0000-000000000001",
+      "notes": "Fuel reserved for Aurora Traverse."
+    },
+    {
+      "id": "50000000-0000-0000-0000-000000000003",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000003",
+      "transaction_type": "reservation",
+      "on_hand_delta": 0,
+      "reserved_delta": 4,
+      "reference_type": "emergency",
+      "reference_id": "90000000-0000-0000-0000-000000000001",
+      "notes": "Oxygen reserved for active emergency."
+    },
+    {
+      "id": "TX-004",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000004",
+      "transaction_type": "receipt",
+      "on_hand_delta": 5.0,
+      "reserved_delta": 0,
+      "occurred_at": "2026-09-10T04:55:16.248698+00:00",
+      "reference_type": null,
+      "reference_id": null,
+      "notes": "Stock received."
+    },
+    {
+      "id": "TX-005",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000004",
+      "transaction_type": "consumption",
+      "on_hand_delta": -3.0,
+      "reserved_delta": 0,
+      "occurred_at": "2026-09-10T04:56:25.076083+00:00",
+      "reference_type": null,
+      "reference_id": null,
+      "notes": "Stock consumed."
+    },
+    {
+      "id": "TX-006",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000004",
+      "transaction_type": "receipt",
+      "on_hand_delta": 1.0,
+      "reserved_delta": 0,
+      "occurred_at": "2026-09-10T10:43:53.949187+00:00",
+      "reference_type": null,
+      "reference_id": null,
+      "notes": "Stock received."
+    },
+    {
+      "id": "TX-007",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000004",
+      "transaction_type": "consumption",
+      "on_hand_delta": -1.0,
+      "reserved_delta": 0,
+      "occurred_at": "2026-09-10T10:52:26.673170+00:00",
+      "reference_type": null,
+      "reference_id": null,
+      "notes": "Stock consumed."
+    },
+    {
+      "id": "TX-008",
+      "station_inventory_id": "40000000-0000-0000-0000-000000000004",
+      "transaction_type": "adjustment",
+      "on_hand_delta": 0.0,
+      "reserved_delta": 0,
+      "occurred_at": "2026-09-10T10:53:54.615550+00:00",
+      "reference_type": null,
+      "reference_id": null,
+      "notes": "Inventory quantity adjusted."
+    }
+  ],
+  "expeditions": [
+    {
+      "id": "60000000-0000-0000-0000-000000000001",
+      "expedition_code": "EXP-26062-01",
+      "name": "Aurora Traverse",
+      "purpose": "Ice-shelf survey and equipment deployment.",
+      "origin_station_id": "10000000-0000-0000-0000-000000000001",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "lead_personnel_id": "20000000-0000-0000-0000-000000000001",
+      "planned_start_at": "2026-09-05T06:00:00Z",
+      "planned_end_at": "2026-09-14T18:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "60000000-0000-0000-0000-000000000002",
+      "expedition_code": "EXP-26062-02",
+      "name": "Depot Resupply Survey",
+      "origin_station_id": "10000000-0000-0000-0000-000000000003",
+      "destination_station_id": "10000000-0000-0000-0000-000000000002",
+      "lead_personnel_id": "20000000-0000-0000-0000-000000000004",
+      "status": "planned"
     }
   ]
 }
